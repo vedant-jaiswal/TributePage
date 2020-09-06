@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Survey Form</title>
+        <style>
+                body{
+                    background-color: rgba(118, 167, 63, 0.842);
+                }
+                #title{
+                    text-align: center;
+                    color: #fff;
+                }
+                #description{
+                    text-align: center;
+                    color: #fff;
+                }
+                #survey-form{
+                    background-color: rgb(45, 45, 116);
+                    color: #fff;
+                    max-width: 70%;
+                    margin-left: 14%;
+                    margin-right: 14%;
+                    padding: 30px;
+                    font-size: x-large;
+                    border-radius: 5px;
+                }
+                #name{
+                    width: 95%;
+                    border: 5px solid #fff;
+                    height: 25px;
+                    margin-top: 10px;
+                    margin-right: 20px;
+                    font-size: large;
+                    border-radius: 5px;
+                }
+                #email{
+                    width: 95%;
+                    border: 5px solid #fff;
+                    height: 25px;
+                    margin-top: 10px;
+                    margin-right: 20px;
+                    font-size: large;
+                    border-radius: 5px;
+                }
+                #number{
+                    width: 95%;
+                    border: 5px solid #fff;
+                    height: 25px;
+                    margin-top: 10px;
+                    margin-right: 20px;
+                    font-size: large;
+                    border-radius: 5px;
+                }
+                #dropdown{
+                    width: 97%;
+                    border: 5px solid #fff;
+                    height: 35px;
+                    margin-top: 10px;
+                    margin-right: 20px;
+                    font-size: large;
+                    border-radius: 5px;
+                }
+                #comment{
+                    width: 95%;
+                    border: 5px solid #fff;
+                    height: 200px;
+                    margin-top: 10px;
+                    margin-right: 20px;
+                    font-size: large;
+                    border-radius: 5px;
+                    text-align: top;
+                }
+                #btn1{
+                    display: block;
+                    width: 100%;
+                    padding: 0.75rem;
+                    background: rgb(72, 201, 72);
+                    color: inherit;
+                    border-radius: 2px;
+                    cursor: pointer;
+                }
+        </style>
+    </head>
+    <body>
+        <header id = "title">
+            <h1>Vedant's Programming World!</h1>
+        </header>
+        <div id = "description">
+            <p>Thank you ! for taking time to help us improve the platform</p>
+        </div>
+        <form id = "survey-form">
+            <label for = "name" id = "name-label" >Name </label><br>
+            <input type = "text" id = "name" name = "name" placeholder="Enter your name" required/><br><br>
+
+            <label for = "email" id = "email-label">Email </label><br>
+            <input type = "email" id = "email" name = "email" placeholder="Enter your email required"/><br><br>
+
+            <label for = "number" id = "number-label">Phone-Number </label><br>
+            <input type = "number" id = "number" name = "number" min = "0" max = "9" placeholder="Enter your number" required/><br><br>
+
+            <label for = "dropdown">Which option best describes your current role ?</label><br>
+            <select id = "dropdown"  name = "dropdown">
+                <option disabled selected>Chose your option</option>
+                <option value = "student">Student</option>
+                <option value = "job">Full Time Job</option>
+                <option value = "parttimejob">Part Time Job</option>
+                <option value = "notspecify">Prefer not to say</option>
+                <option value = "other">Others</option>
+            </select><br><br>
+
+            <label for = "gender">Gender</label><br>
+            <label><input type = "radio" name = "gender" value = "male">Male</label><br>
+            <label><input type = "radio" name = "gender" value = "female">Female<br></label><br>
+
+            <label>Which Languages you want to learn ?</label><br>
+            <input type = "checkbox" name = "lang1" value = "java">
+            <label for = "lang1">Java</label><br>
+            <input type = "checkbox" name = "lang2" value = "Python">
+            <label for = "lang2">Python</label><br>
+            <input type = "checkbox" name = "lang3" value = "c">
+            <label for = "lang3">C</label><br>
+            <input type = "checkbox" name = "lang4" value = "c++">
+            <label for = "lang4">C++</label><br>
+            <input type = "checkbox" name = "lang5" value = "flutter">
+            <label for = "lang5">Flutter</label><br><br>
+
+            <label for = "comment">Any Comment or Suggestions ?</label><br>
+            <input type = "text" name = "comment" id = "comment" placeholder="Enter your comment here."/><br><br>
+
+            <input type = "submit" id = "btn1" value = "Submit">
+        </form>
+
+    </body>
+</html>
